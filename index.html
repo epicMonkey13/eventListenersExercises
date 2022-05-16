@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>event listeners</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- hamburger -->
+  <header>
+    <nav class="navbar">
+      <div class="name">Name</div>
+      <a href="#" id="nav-toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div id="nav-items">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <!-- end of hamburger -->
+  <!-- ex 1 -->
+  <h1>ex 1</h1>
+  <button id="button">click me</button>
+  <div id='div-to-hide'>this is some text to be hidden when the button is clicked</div>
+  <br>
+  <!-- end of ex 1 -->
+
+  <!-- ex 2 -->
+  <h1>ex 2</h1>
+  <div class="container">
+    <form id='passwordForm' onsubmit="return false">
+      <label for="usrname">Username</label>
+      <input type="text" id="usrname" name="usrname">
+      <label for="psw">Password</label>
+      <input type="text" id="psw" name="psw">
+      <button type="submit"> submit </button>
+    </form>
+  </div>
+  <div id="message">
+    <h3>The password must contain at least 8 characters</h3>
+  </div>
+  <br>
+  <!-- end of ex 2 -->
+
+  <!-- ex3 -->
+  <h1>ex 3 My dynamic shopping list</h1>
+  <div>
+    <label for="item">Enter a new item:</label>
+    <input type="text" name="item" id="item">
+    <button id='adding-button'>Add item</button>
+  </div>
+  <ul id='shopping-list'>
+  </ul>
+  <br>
+  <!-- end of ex 3 -->
+
+  <!-- ex 4 -->
+  <!-- <h1> ex 4 £ to $ converter</h1>
+  <form>
+    <label>Enter amount in pounds:</label>
+    <input id="number-in-pounds">
+    <button id='conversion-button'>convert</button>
+    </div>
+    <br>
+  </form>
+  <br> -->
+  <!-- end of ex 4 which didn't work here -->
+
+  <!-- ex 5 accordion -->
+  <section class="accordion">
+    <h1>FAQ</h1>
+    <div class="accordion-item">
+      <h3 class="accordion-item-header">FAQ 1</h3>
+      <div class="hide-accordion">
+        <p class="accordion-item-body-content">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
+          ducimus error, aliquam fuga magni ratione fugiat esse in, incidunt
+          dolores optio molestiae excepturi officiis labore exercitationem et
+          obcaecati vero veniam.
+        </p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h3 class="accordion-item-header">FAQ 2</h3>
+      <div class="hide-accordion">
+        <p class="accordion-item-body-content">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
+          ducimus error, aliquam fuga magni ratione fugiat esse in, incidunt
+          dolores optio molestiae excepturi officiis labore exercitationem et
+          obcaecati vero veniam.
+        </p>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h3 class="accordion-item-header">FAQ 3</h3>
+      <div class="hide-accordion">
+        <p class="accordion-item-body-content">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
+          ducimus error, aliquam fuga magni ratione fugiat esse in, incidunt
+          dolores optio molestiae excepturi officiis labore exercitationem et
+          obcaecati vero veniam.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- end of ex 5 accordion -->
+
+  <!-- ex 6 event listeners -->
+  <form id="form">
+    <label>Name: <input id="name" type="text"></label>
+    <br><br>
+    <button type="submit">Submit form</button>
+  </form>
+  <p id="log"></p>
+    <!-- ex 6 event listeners -->
+
+  <!-- ex 7 session storage -->
+  <h1>Storage</h1>
+    <form id='exampleForm'>
+      <div id="example1">
+        <br /><br />
+        <label for="exampleInput">Example Input</label>
+        <input type="text" id="exampleInput" placeholder="Placeholder Text" />
+        <br /><br />
+        <button class="btn">hello world</button>
+      </div>
+    </form>
+    <p></p>
+  <br><br>
+  <!-- end of ex 7 session storage-->
+
+
+
+  <script src='app.js'></script>
+</body>
+
+</html>
